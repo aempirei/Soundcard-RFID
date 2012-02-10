@@ -49,6 +49,12 @@ at the soundcard. The next thing you may notice is that
 the soundcard may have a relatively lower RMS than you expect
 but were not concerned about absolute power.
 
+It helps immensely to hook the output to an oscilloscope
+first to see if you see something that seems like it
+looks like it might be data when you bring an rfid card
+near to the inductor. If you see this magical action
+you are most likely in business.
+
 Also, visually you may not be able to see the data in
 its analog form very easily if at all because it relies on
 a very small variance in the FSK frequencies.
