@@ -1,0 +1,57 @@
+Soundcard-RFID - Code for decoding 125KHZ HID cards using your soundcard.
+
+Copyright(c) 2011 by Christopher Abad
+
+EMAIL: aempirei@gmail.com aempirei@256.bz
+AIM: ambientempire
+IRC: aempirei on irc.freenode.net
+
+http://www.facebook.com/aempirei
+https://github.com/aempirei
+
+http://www.twentygoto10.com/
+http://blog.twentygoto10.com/
+http://www.the-mathclub.net/
+http://www.256.bz/
+
+You will need the following things:
+
+A function generator that can do 115khz sinewave output.
+
+A soundcard that can sample at 125khz 16bit mono.
+
+Audacity
+
+And the following schematic:
+
+                        L1        C1
+ 115khz SINEWAVE >-----nnnn---+---||-----| GND
+                              |
+                              +----------| LINE-IN
+
+   C1 - 22pf capacitor
+	L1 - 16uH inductor
+
+This schematic is very minimal and may be prone to issues
+but generally the LC resonator circuit should be tuned to
+about 115khz or so as I had better success with a slightly
+slower signal to the inductor and sample slightly above
+this at the soundcard.
+
+Now you will have to sort of adjust the function generator
+gain a lil at first just so you can get a decent sampling
+at the soundcard. The next thing you may notice is that
+the soundcard may have a relatively lower RMS than you expect
+but were not concerned about absolute power.
+
+Also, visually you may not be able to see the data in
+its analog form very easily if at all because it relies on
+a very small variance in the FSK frequencies.
+
+From here just record the data with audacity at 125khz if
+you can, save it out to a 16-bit mono WAV file and then
+run it through process.sh after building the few programs.
+
+Now you should find a 16-bit 5 digit number on the back
+of your card and this should show up in the decoded binary.
+
