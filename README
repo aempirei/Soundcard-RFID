@@ -32,6 +32,11 @@ And the following schematic:
    C1 - 22pf capacitor
 	L1 - 16uH inductor
 
+It may make most sense to wind the inductor yourself,
+and it seems to be extremely forgiving. I just wound some
+magnetic wire around a rectangular box about the size of
+a credit card about 25 times.
+
 This schematic is very minimal and may be prone to issues
 but generally the LC resonator circuit should be tuned to
 about 115khz or so as I had better success with a slightly
@@ -48,6 +53,7 @@ Also, visually you may not be able to see the data in
 its analog form very easily if at all because it relies on
 a very small variance in the FSK frequencies.
 
+Place your RFID tag over the inductor that you made.
 From here just record the data with audacity at 125khz if
 you can, save it out to a 16-bit mono WAV file and then
 run it through process.sh after building the few programs.
