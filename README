@@ -16,11 +16,9 @@ http://www.256.bz/
 
 You will need the following things:
 
-A function generator that can do 115khz sinewave output.
-
-A soundcard that can sample at 125khz 16bit mono.
-
-Audacity
+   A function generator that can do 115khz sinewave output.
+   A soundcard that can sample at 125khz 16bit mono.
+   Audacity or something to record with.
 
 And the following schematic:
 
@@ -30,7 +28,7 @@ And the following schematic:
                               +----------| LINE-IN
 
    C1 - 22pf capacitor
-	L1 - 16uH inductor
+   L1 - 16uH inductor
 
 It may make most sense to wind the inductor yourself,
 and it seems to be extremely forgiving. I just wound some
