@@ -18,7 +18,7 @@ You will need the following things:
 
    A function generator that can do 115khz sinewave output.
    A soundcard that can sample at 125khz 16bit mono.
-   Audacity or something to record with.
+   ~~Audacity or something to record with.~~ You can now use record.sh to record audio in the correct format.
 
 And the following schematic:
 
